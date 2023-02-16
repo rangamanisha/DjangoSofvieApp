@@ -16,7 +16,7 @@ def index(request):
             state = StateModel.objects.get(id=state),
             city = CityModel.objects.get(id=city),
         )
-        messages.success(request,'Company Successfully Added')
+        messages.success(request,'Miner Successfully Added')
 
     context = {'dropone':dropone,'company_data':company_data}
     return render(request,'index.html',context)
